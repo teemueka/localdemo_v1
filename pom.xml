@@ -36,8 +36,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!-- Specify the fully qualified Main class -->
-                            <mainClass>LocalizedGreeting</mainClass>
+                            <mainClass>LocalizedGreeting</mainClass> <!-- Correct main class -->
                         </manifest>
                     </archive>
                 </configuration>

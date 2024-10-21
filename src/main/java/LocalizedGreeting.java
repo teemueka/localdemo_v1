@@ -16,12 +16,12 @@ public class LocalizedGreeting {
 
         // Set the locale based on user's choice
         Locale locale = switch (choice) {
-            case 1 -> new Locale("en", "US");
-            case 2 -> new Locale("fr", "FR");
-            case 3 -> new Locale("es", "ES");
+            case 1 -> Locale.of("en", "US");
+            case 2 -> Locale.of("fr", "FR");
+            case 3 -> Locale.of("es", "ES");
             default -> {
                 System.out.println("Invalid choice. Defaulting to English.");
-                yield new Locale("en", "US");
+                yield Locale.of("en", "US");
             }
         };
 

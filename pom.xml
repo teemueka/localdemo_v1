@@ -15,7 +15,7 @@
     </properties>
 
     <build>
-        <finalName>Test</finalName>
+        <finalName>test</finalName>
         <plugins>
             <!-- Compiler Plugin for setting the Java version -->
             <plugin>

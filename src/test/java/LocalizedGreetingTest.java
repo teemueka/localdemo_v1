@@ -7,7 +7,7 @@ public class LocalizedGreetingTest {
 
     @Test
     public void testEnglishGreeting() {
-        Locale locale = Locale.of("en", "US");
+        Locale locale = new Locale("en", "US");
         ResourceBundle messages = ResourceBundle.getBundle("Messages", locale);
         String greeting = messages.getString("greeting");
         assertEquals("Hello!", greeting);
@@ -15,7 +15,7 @@ public class LocalizedGreetingTest {
 
     @Test
     public void testSpanishGreeting() {
-        Locale locale = Locale.of("es", "ES");
+        Locale locale = new Locale("es", "ES");
         ResourceBundle messages = ResourceBundle.getBundle("Messages", locale);
         String greeting = messages.getString("greeting");
         assertEquals("Hola!", greeting);
@@ -23,7 +23,7 @@ public class LocalizedGreetingTest {
 
     @Test
     public void testFrenchGreeting() {
-        Locale locale = Locale.of("fr", "FR");
+        Locale locale = new Locale("fr", "FR");
         ResourceBundle messages = ResourceBundle.getBundle("Messages", locale);
         String greeting = messages.getString("greeting");
         assertEquals("Bonjour!", greeting);
@@ -31,7 +31,7 @@ public class LocalizedGreetingTest {
 
     @Test
     public void testInvalidChoiceDefaultsToEnglish() {
-        Locale locale = Locale.of("en", "US"); // Simulate default choice
+        Locale locale = new Locale("en", "US"); // Simulate default choice
         ResourceBundle messages = ResourceBundle.getBundle("Messages", locale);
         String greeting = messages.getString("greeting");
         assertEquals("Hello!", greeting); // Expected default is English

@@ -33,7 +33,7 @@ public class LocalizedGreeting {
         }
 
         // Load the resource bundle for the selected locale
-        ResourceBundle messages = ResourceBundle.getBundle("resources.MessagesBundle", locale);
+        ResourceBundle messages = ResourceBundle.getBundle("Messages", locale);
 
         // Display the localized greeting message
         System.out.println(messages.getString("greeting"));
